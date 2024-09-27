@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to right, #4baa7a, #aac27e);
+    font-family: 'Poppins', sans-serif;
+}
+
+.stopwatch {
+    text-align: center;
+}
+
+.circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(10, 0, 0, 0.2) 50%, rgba(0, 0, 0, 0.3) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    margin: 20px auto;
+}
+
+.time {
+    font-size: 36px;
+    color: #333;
+    background: linear-gradient(45deg, #000000, #000000);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.controls button {
+    margin: 10px;
+    width: 60px;
+    height: 60px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+    color: white;
+    font-size: 16px;
+    position: relative;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+#start {
+    background: linear-gradient(45deg, #4caf50, #66bb6a); /* Green */
+}
+
+#stop {
+    background: linear-gradient(45deg, #f44336, #e57373); /* Red */
+}
+
+#reset {
+    background: linear-gradient(45deg, #2196F3, #64b5f6); /* Blue */
+}
+
+#lap {
+    background: linear-gradient(45deg, #ff9800, #ffb74d); /* Orange */
+}
+
+.controls button:hover {
+    transform: translateY(-3px);
+}
+
+.controls button:active {
+    transform: translateY(1px);
+    opacity: 0.8;
+}
+
+.laps {
+    margin-top: 20px;
+}
+
+.laps ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.laps li {
+    padding: 5px 10px;
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    margin: 5px 0;
+    transition: background 0.3s;
+}
+
+.laps li:hover {
+    background: rgba(0, 0, 0, 0.2);
+}
